@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.form_d {
+    overflow: hidden;
+}
+
+#modal::backdrop {
+    background-color: rgba(0, 0, 0, .88);
+}
+
+#modal {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    width: 500px;
+}
+
+#modal input {
+    font-size: 15px;
+    display: block;
+    margin: 0 auto 25px;
+    width: 100%;
+    padding: 20px;
+}
+
+#modal input::placeholder {
+    color: green;
+}
+
+.titulo {
+    width: 100%;
+}
+
+.titulo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+.titulo p {
+    color: #84a98c;
+    font-size: 40px;
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+ 
+}
+.Nuevo {
+    padding: 20px 40px;
+    color: white;
+    background-color: #84a98c;
+    border-color: #84a98c;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+.Back{
+  position: absolute;
+  padding: 10px;
+  font-size: 27.5px;
+  top: -8px;
+  right: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.Back:hover{
+ color: green;
+}
+button.cerrar:hover{
+    background-color: red;
+    border-color: white;
+    color: white;
+}
+button.enviar:hover{
+    background-color: green;
+    border-color: white;
+    color: white;
+}
+#btn-enviar-modal{
+  padding: 20px;
+  font-size: 20px;
+}
+#btn-cerrar-modal {
+
+  position: absolute;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 100%;
+  top: 5px;
+  right: 5px;
+}
+.Nuevo:hover {
+    padding: 20px 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #354f52;
+}
+th,
+td {
+    border-bottom: 1px solid #84a98c;
+    padding: 10px 58px;
+    word-break: break-all;
+    text-align: center;
+}
+
+tr:hover td {
+    color: #43aa8b;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #cad2c5;
+    color: #2f3e46;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+.tabla_section {
+    padding-top: 0;
+    overflow: auto;
+    margin-top: 0px;
+}
+
+.tabla_section table {
+    width: 100%;
+}
+
+.editar-eliminar a {
+    color: #84a98c;
+}
+
+.editar-eliminar .editar-link:hover {
+    color: #354f52;
+}
+
+.editar-eliminar .eliminar-link:hover {
+    color: red;
+}

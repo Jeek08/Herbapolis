@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+button{
+  position: absolute;
+  padding: 10px;
+  font-size: 27.5px;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+    
+}
+#btn-cerrar-modal {
+
+  position: absolute;
+  background: transparent;
+  padding: 10px;
+  font-size: 35px;
+  top: 5px;
+  right: 5px;
+}
+button:hover{
+  color: green;
+}
+.titulo {
+    background-color: rgb(248, 248, 248);
+}
+
+.titulo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+.titulo p {
+    color: #84a98c;
+    font-size: 40px;
+}
+th,td{
+    border-bottom: 1px solid #84a98c;
+    padding: 10px 58px;
+    word-break: break-all; 
+    text-align: center;
+}
+tr:hover td{
+    color: #43aa8b;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #cad2c5;
+    color: #2f3e46;
+    font-size: 15px;
+}
+table{
+    width: 100%
+    min-width: 900px;
+    border-collapse: collapse;
+}
+.tabla_section{
+    padding-top: 0;
+    overflow: auto;
+    margin-top: 0px;
+}
+.tabla_section table {
+  width: 100%;
+}
+input {
+      font-size: 15px;
+    display: block;
+    margin: 0 auto 25px;
+    width: 100%;
+    padding: 20px;
+    margin-left: -60px;
+    margin-right: 150px;
+    }
+input[type="submit"] {
+   padding: 20px 40px;
+    color: white;
+    background-color: #84a98c;
+    border-color: #84a98c;
+    font-size: 20px;
+    border-radius: 10px;
+}
+input[type="submit"]:hover{
+  padding: 20px 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #354f52;
+
+}

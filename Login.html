@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Herbapolis</title>
+</head>
+
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2 class="titulo">Bienvenido al Sistema de Control de Inventario de Herbapolis</h2>
+                <p class="who">Si eres Administrador por favor inicia sesion aqui</p>
+
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Sistema para Vendedores</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxs-user-account' ></i>
+                </div>
+            </div>
+            <p class="problema"><a href="https://api.whatsapp.com/send/?phone=%2B584146871663&text&type=phone_number&app_absent=0">¿Algun Problema? Contactanos</a></p>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+            <input type="password" placeholder="Contraseña" id="codigo" required>
+
+            <input type="button" id="btn-i" value="Iniciar Sesion" onclick="return login()">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Sistema para Administrador</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxs-user-circle' ></i>
+                </div>
+                
+            </div>
+            <p class="problema"><a href="https://api.whatsapp.com/send/?phone=%2B584146871663&text&type=phone_number&app_absent=0">¿Algun Problema? Contactanos</a></p>
+            <input type="text" placeholder="Nombre" id="nombre2" required>
+            <input type="password" placeholder="Contraseña" id="codigo2" required>
+
+            <input type="button" id="btn-i" value="Iniciar Sesion" onclick="return login2()">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2 class="titulo">Bienvenido al Sistema de Control de Inventario de Herbapolis</h2>
+                <p class="who">Si eres un Vendedor por favor inicia sesion aqui</p>
+                <button class="sign-in-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+</html>
+        <script>
+        function login(){
+
+            var nombre = document.getElementById('nombre').value;
+            var codigo = document.getElementById('codigo').value;
+
+            if (nombre === 'jarolh' && codigo === 'jarolh' || nombre === 'alejandro' && codigo === 'alejandro'){    
+                 alert ("Ingresaste");
+                 window.location.href="http://localhost/amen/Untitled2.php";  
+            }
+            else{
+                 alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+                 document.getElementById('nombre').value = ''; 
+                 document.getElementById('codigo').value = ''; 
+            }
+                return false;
+                        }
+
+        </script>
+
+        <script>
+        function login2(){
+
+            var nombre = document.getElementById('nombre2').value;
+            var codigo = document.getElementById('codigo2').value;
+
+            if (nombre === 'jesus' && codigo === 'jesus' || nombre === 'jekson' && codigo === 'jekson'){    
+                 alert ("Ingresaste");   
+                 window.location.href="http://localhost/amen/Untitled-1.php";
+            }
+            else{
+                 alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+                 document.getElementById('nombre2').value = ''; 
+                 document.getElementById('codigo2').value = ''; 
+            }
+                return false;
+                        }
+
+        </script>
+<script>
+	  const $btnSignIn= document.querySelector('.sign-in-btn'),
+      $btnSignUp = document.querySelector('.sign-up-btn'),  
+      $signUp = document.querySelector('.sign-up'),
+      $signIn  = document.querySelector('.sign-in');
+
+      document.addEventListener('click', e => {
+            if (e.target === $btnSignIn || e.target === $btnSignUp) {
+            $signIn.classList.toggle('active');
+            $signUp.classList.toggle('active')
+            }
+                            });
+</script>
